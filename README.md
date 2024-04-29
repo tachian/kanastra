@@ -1,27 +1,28 @@
-# Credit Card Service
+# Kanastra Service
 
 ## RoadMap to UP
- + Clone repository
-    + `$ git clone git@github.com:tachian/kanastra-service.git`
++ Clone repository  
+  `$ git clone git@github.com:tachian/kanastra-service.git`
 
- + Create virtual env
-   python3 -m venv <myenvname>
++ Create virtual env  
+  `$ python3 -m venv <myenvname>`
 
- + Install libs
-   pip install -r requirements-dev.txt
++ Install libs  
+  `$ pip install -r requirements-dev.txt`
 
- + Running tests
-    pytest
++ Running tests  
+  `$ pytest`
 
- + Create image
-    docker build -t kanastra .  
++ Create image  
+  `$ docker build -t kanastra .`  
 
- + Run image to start API
-    docker run -p 5000:5000 kanastra  
++ Run image to start API  
+  `$ docker run -p 5000:5000 kanastra`
 
- + Run Scheduler - To send email/slips
-    docker exec -it <CONTAINER ID> python scheduler.py
++ Run Scheduler - To send email/slips
+  `$ docker exec -it <CONTAINER ID> python scheduler.py`
 
- + HEALTH endpoints
-   + http://localhost:5000/api/health: If API is working, must show {"service": "API Kanastra HealthCheck", "version": "1.0"}
++ HEALTH endpoints  
+    http://localhost:5000/api/health: If API is working, must show {"service": "API Kanastra HealthCheck", "version": "1.0"}
 
++ [Postman collection with endpoints](https://github.com/tachian/kanastra/blob/main/Kanastra.postman_collection.json)
