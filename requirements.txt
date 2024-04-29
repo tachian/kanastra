@@ -1,0 +1,13 @@
+Flask
+Flask-Cors
+Flask-Migrate
+flask-restx
+Flask-SQLAlchemy
+Flask-WTF
+botocore
+boto3
+python-dotenv
+json-logging
+SQLAlchemy
+pandas
+APScheduler

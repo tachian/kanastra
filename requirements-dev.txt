@@ -1,0 +1,4 @@
+-r requirements.txt
+pytest
+ipdb
+flask-shell-ipython
